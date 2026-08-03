@@ -26,8 +26,6 @@ It demonstrates angle based movement using cosine and sine.
 * A - rotate left
 * D - rotate right
 
-*Movement direction is calculated using: dx = cos(theta), dy = sin(theta)*
-
 ## Preview
 <img src="preview.png" width="400">
 
