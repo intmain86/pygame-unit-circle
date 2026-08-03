@@ -24,20 +24,21 @@ while run:
     k = pygame.key.get_pressed()
 
     # rotation
-    if k[pygame.K_a]:
+    if k[pygame.K_d]:
         theta -= 0.05
 
-    if k[pygame.K_d]:
+    if k[pygame.K_a]:
         theta += 0.05
 
     # movement
+    # important fix: y screen = -y math
     if k[pygame.K_w]:
         x += math.cos(theta) * s
-        y += math.sin(theta) * s
+        y -= math.sin(theta) * s
 
     if k[pygame.K_s]:
         x -= math.cos(theta) * s
-        y -= math.sin(theta) * s
+        y += math.sin(theta) * s
 
     screen.fill((150,150,150))
 
@@ -46,7 +47,7 @@ while run:
 
     # player arrow
     px = x + math.cos(theta) * 45
-    py = y + math.sin(theta) * 45
+    py = y - math.sin(theta) * 45
     pygame.draw.line(screen, (255,0,0), (px,py), (x,y), 3)
 
     # unit circle
@@ -54,7 +55,7 @@ while run:
 
     # unit circle arrow
     ux = 400 + math.cos(theta) * 200
-    uy = 300 + math.sin(theta) * 200
+    uy = 300 - math.sin(theta) * 200
     pygame.draw.line(screen, (255,0,0), (400,300), (ux,uy), 3)
 
     # stats
