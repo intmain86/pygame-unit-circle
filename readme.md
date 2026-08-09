@@ -1,31 +1,13 @@
-# Visual Trig (Pygame)
+# Pygame Unit Circle
 
-> About
+A simple interactive trigonometry visualizer made with Python and Pygame.
 
-A simple interactive trig visualizer written in Python using Pygame.
-It demonstrates angle based movement using cosine and sine.
+## Controls
 
->  How To Run
-
-1. Make sure you have Python 3 installed.
-
-`https://www.python.org/downloads/`
-
-2. Install Pygame:
-
-`pip install pygame`
-
-3. Run
-
-`python visual-trig.py`
-
-> Controls
-
-* W - move forward
-* S - move backward
-* A - rotate left
-* D - rotate right
+* **W**: Move forward
+* **S**: Move backward
+* **A**: Rotate left
+* **D**: Rotate right
 
 ## Preview
 <img src="preview.png" width="400">
-

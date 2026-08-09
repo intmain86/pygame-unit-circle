@@ -4,8 +4,6 @@ pygame.init()
 screen = pygame.display.set_mode((800,600))
 font = pygame.font.SysFont("consolas", 18)
 
-pygame.display.set_caption("visual trig")
-
 x,y = 400,300
 theta = 0
 s = 4
